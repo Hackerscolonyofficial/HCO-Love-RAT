@@ -32,9 +32,18 @@ fi
 
 echo -e "\e[92m✅ Key accepted. Continuing setup...\e[0m"
 
-# Add alias after key verification
-echo -e "\e[93m[+] Creating command: \e[92mloveRat\e[0m"
-echo 'alias loveRat="am start -a android.intent.action.VIEW -d https://pokaing7.github.io/Subscribe-hacker-colony-/"' >> ~/.bashrc
+# ✅ ADDING HCO SHORTCUT COMMANDS
+echo -e "\e[92m[+] Adding shortcut commands...\e[0m"
+{
+echo 'alias loveRat="am start -a android.intent.action.VIEW -d https://pokaing7.github.io/Subscribe-hacker-colony-/"'
+echo 'alias hcoTelegram="am start -a android.intent.action.VIEW -d https://t.me/hackersColony"'
+echo 'alias hcoInsta="am start -a android.intent.action.VIEW -d https://instagram.com/hackers_colony_official"'
+echo 'alias hcoDiscord="am start -a android.intent.action.VIEW -d https://discord.gg/Xpq9nCGD"'
+echo 'alias hcoWebsite="am start -a android.intent.action.VIEW -d https://hackerscolonyofficial.blogspot.com/?m=1"'
+} >> ~/.bashrc
+
 source ~/.bashrc
 
-echo -e "\e[92m[✔] Done! Type \e[93mloveRat\e[92m to open Hackers Colony Subscribe Page.\e[0m"
+echo -e "\n\e[92m[✔] Setup complete!\e[0m"
+echo -e "Type \e[93mloveRat\e[0m to open Hackers Colony subscription."
+echo -e "Type \e[93mhcoTelegram\e[0m, \e[93mhcoInsta\e[0m, \e[93mhcoDiscord\e[0m, or \e[93mhcoWebsite\e[0m anytime for quick access.\n"
